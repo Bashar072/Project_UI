@@ -1,6 +1,7 @@
 import React from "react";
 import users from "./components/pages/users";
 import students from "./components/pages/students";
+import students from "./components/pages/addstudent";
 import {
     BrowserRouter as Router,
     Route,
@@ -15,6 +16,7 @@ function App(props) {
                 <Switch>
                     <Route exact path="/users" component={users} />
                     <Route exact path="/students" component={students} />
+		    <Route exact path="/students/addstudent" component={addstudents} />
                 </Switch>
             </div>
         </Router>
